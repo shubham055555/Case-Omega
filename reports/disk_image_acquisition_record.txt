@@ -1,0 +1,35 @@
+CASE OMEGA - DIGITAL FORENSIC ACQUISITION RECORD
+
+Case ID: CASE-OMEGA-2026
+Evidence ID: EVD-004
+Evidence Name: case_omega_simulated.dd
+Evidence Type: Synthetic Raw Disk Image
+File Size: 8,388,608 bytes (8 MB)
+
+Acquisition Method:
+A synthetic raw evidence image was generated using a Python script.
+The image contains fictional hospital incident artifacts for academic
+forensic training. It was not acquired from an actual hospital device.
+
+Acquisition Tool:
+Python 3.11
+
+Acquisition Script:
+scripts/create_simulated_image.py
+
+SHA-256:
+2e49b4f51b8682dcc2a870eafcae3a71250b3b8921be27c9171e092ffa1a1551
+
+Integrity Verification:
+PASS - Independently calculated SHA-256 hash matched the recorded hash.
+
+Evidence Location:
+evidence/images/case_omega_simulated.dd
+
+Limitations:
+This is a synthetic training artifact, not a bit-for-bit acquisition
+of a physical disk or hospital server. No real patient data was used.
+
+Prepared by: Shubham
+University Roll No.: 2301730100
+Date: 23 November 2026
