@@ -1,0 +1,9 @@
+IOC Type,Matched Log Entry,Source Log,Line Number
+Suspicious Account,2026-11-18T08:41:10Z LOGIN user=unknown-admin result=success,authentication.log,3
+Suspicious Account,2026-11-18T08:43:02Z PRIVILEGE_CHANGE user=unknown-admin,authentication.log,4
+Persistence Service,2026-11-18T09:03:55Z SERVICE_CREATE service=UpdaterSvc,authentication.log,5
+Ransom Note,2026-11-18T09:24:01Z RANSOM_NOTE_CREATED README_RECOVER.txt,authentication.log,7
+USB Device,2026-11-18T08:40:03Z USB_INSERTED device=USB-TRAIN-004,endpoint.log,2
+Suspicious Process,2026-11-18T08:42:15Z PROCESS_STARTED remote_tool.exe,endpoint.log,3
+Encrypted Extension,2026-11-18T09:22:18Z FILE_RENAMED extension=.locked count=1842,endpoint.log,5
+Suspicious IP,2026-11-18T09:06:40Z OUTBOUND_CONNECTION dst=198.51.100.24 action=blocked,network.log,4

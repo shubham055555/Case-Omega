@@ -1,0 +1,26 @@
+CASE OMEGA - HOSPITAL NETWORK SCENE SKETCH
+SIMULATED TRAINING ENVIRONMENT
+
+             [USB DEVICE]
+                  |
+                  |
+             [WS-07]
+                  |
+                  |
+             [NETWORK]
+                  |
+          +-------+-------+
+          |               |
+     [HIS-SRV01]     [FIREWALL]
+          |               |
+     [Hospital       [Internet]
+       Data]              |
+                    [External IP]
+
+Evidence:
+E-01: Workstation
+E-02: Hospital Server
+E-03: USB Device
+E-04: Network Logs
+
+Note: This is a logical simulated network sketch, not an actual crime-scene photograph.

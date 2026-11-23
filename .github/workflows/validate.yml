@@ -1,0 +1,46 @@
+name: Case Omega Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check Required Files
+        run: |
+          test -f README.md
+          test -f reports/first_responder_sop.md
+          test -f reports/chain_of_custody.csv
+          test -f reports/attack_timeline.csv
+          test -f reports/final_forensic_report.md
+          test -f reports/Case_Omega_Final_Report.docx
+          test -f reports/Case_Omega_Final_Report.pdf
+          test -f malware_analysis/analysis.md
+          test -f evidence/logs/authentication.log
+          test -f evidence/logs/network.log
+          test -f evidence/logs/endpoint.log
+
+      - name: Validate Python Syntax
+        run: python -m py_compile scripts/*.py
+
+      - name: Run IOC Detection
+        run: python scripts/ioc_detector.py
+
+      - name: Generate Attack Timeline
+        run: python scripts/timeline_generator.py
+
+      - name: CI Validation Complete
+        run: echo "Case Omega validation successful"
