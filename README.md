@@ -23,4 +23,3 @@ of a ransomware attack on a fictional hospital network.
 - Git and GitHub
 - GitHub Actions
 
-Project Status: In Progress
